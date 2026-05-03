@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"name": "Trade Scanner",
 	"description": "Scans Trade Market listings and reads item prices.",
-	"authors": ["You"],
+	"authors": ["Stoven"],
 	"environment": "client",
 	"entrypoints": {
 		"client": [

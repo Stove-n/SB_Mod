@@ -54,3 +54,7 @@ run/
 **/devauth.toml
 **/devauth.json
 **/.devauth/
+
+**/accounts.json
+**/tokens.json
+**/session.json
