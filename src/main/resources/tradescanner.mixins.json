@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "package": "com.sb_sub.tradescanner.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "client": [
+        "HandledScreenMixin",
+        "KeyBindingAccessor"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

@@ -1,0 +1,36 @@
+plugins {
+    id 'fabric-loom' version '1.16.1'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url = "https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1"
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    modRuntimeOnly "me.djtheredstoner:DevAuth-fabric:1.2.2"
+}
+
+loom {
+    runs {
+        client {
+            property "devauth.enabled", "true"
+            property "devauth.account", "main"
+        }
+    }
+}

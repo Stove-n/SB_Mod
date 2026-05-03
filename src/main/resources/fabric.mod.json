@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "tradescanner",
+	"version": "1.0.0",
+	"name": "Trade Scanner",
+	"description": "Scans Trade Market listings and reads item prices.",
+	"authors": ["You"],
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.sb_sub.tradescanner.TradeScannerClient"
+		]
+	},
+	"mixins": [
+		"tradescanner.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "1.21.11",
+		"fabric-api": "*"
+	}		
+}
